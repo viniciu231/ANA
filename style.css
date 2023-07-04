@@ -1,0 +1,179 @@
+body {
+    background: #ff6f9c;
+    margin: 0;
+    padding: 0;
+}
+.section {
+    background: rebeccapurple;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    margin-top: 100px;
+    overflow: hidden;
+    position: relative;
+    display: none;
+}
+.triangulo {
+    width: 0;
+    height: 0;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-bottom: 160px solid rgba(165, 115, 214, 0.993);
+    transform: rotate(180deg);
+    animation: animetriangulo 3s infinite;
+}
+
+.container {
+    width: 200px;
+    height: 200px;
+    background: red;
+    margin: auto;
+    margin-top: 130px;
+    transform: rotate(-45deg);
+    animation: animebutton 2s infinite;
+    transition: 3s box-shadow;
+    
+}
+.container:before,
+.container:after {
+  content: "";
+  background-color: red;
+  border-radius: 50%;
+  height: 200px;
+  position: absolute;
+  width: 200px;
+  animation: animebutton 2s infinite;
+}
+.container:before {
+    top: -100px;
+}
+
+.container:after {
+    left: 100px;
+}
+
+
+.botao {
+    background: rgb(212, 9, 219);
+    border: none;
+    width: 200px;
+    height: 70px;
+    margin-top: 60px;
+    border-radius: 15px;
+    font: bolder 20pt Arial;
+    cursor: pointer;
+    color: whitesmoke;
+    background: red;
+}
+.button {
+    text-align: center;
+}
+.teamo {
+    text-align: center;
+    font: bolder 25pt Arial;
+    color: whitesmoke;
+}
+
+@keyframes animebutton {
+    0% {
+        background: #ff0000;
+    }
+    50% {
+        background: #cc0000;
+    }
+    100% {
+        background: #ff0000;
+    }
+}
+
+@keyframes balancoanime {
+    0% {
+        transform: rotate(0deg);
+    }
+    15% {
+        transform: rotate(-10deg);
+    }
+    30% {
+        transform: rotate(10deg);
+    }
+    50% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.container:hover {
+    box-shadow: 0 0 0 30px rgb(224, 83, 224), 
+                    0 0 0 60px rgb(219, 83, 224),
+                    0 0 0 100px rgb(200, 83, 224),
+                    0 0 0 120px rgb(214, 82, 226), 
+                    0 0 0 200px rgb(208, 37, 214), 
+                    0 0 0 400px rgb(160, 27, 165), 
+                    0 0 0 450px rgb(229, 63, 235);
+}
+
+.containerCarta {
+    background: white;
+    width: 300px;
+    height: 960px;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 30px;
+    display: none;
+    text-align: justify;
+} 
+
+.carta {
+    padding: 10px;
+    font: normal 12pt Arial;
+}
+.BTNquiz{ 
+    background: rgb(212, 9, 219);
+    border: none;
+    width: 200px;
+    height: 70px;
+    margin-top: 60px;
+    border-radius: 15px;
+    font: bolder 20pt Arial;
+    cursor: pointer;
+    color: whitesmoke;
+    background: red;
+}
+.buttonCont{
+    text-align: center;
+}
+.containerquiz {
+    display: none;
+    background: white;
+    border: 3px solid black;
+    border-radius: 15px;
+    width: 290px;
+    height: 550px;
+    margin: auto;
+    margin-top: 15px;
+    padding: 10px;
+}
+.eu {
+    width: 70px;
+    height: 70px;
+    background: red;
+    border: none;
+    border-radius: 15px;
+    font: bolder 12pt Arial;
+    position: absolute;
+    left: 60px;
+}
+.vinicius {
+    width: 70px;
+    height: 70px;
+    background: greenyellow;
+    border: none;
+    border-radius: 15px;
+    font: bolder 12pt Arial;
+}
+.containerNome {
+    text-align: center;
+    margin-top: 50px;
+}
